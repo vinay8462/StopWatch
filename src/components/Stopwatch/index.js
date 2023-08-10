@@ -8,7 +8,7 @@ class Stopwatch extends Component {
   }
 
   componentWillUnmount() {
-    this.clearTimerInterval()
+    this.clearInterval(timerId)
   }
 
   onStart = () => {
